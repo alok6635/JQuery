@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQuery - add html content</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+      .parent,
+      .parent1 {
+        width: 250px;
+        height: 450px;
+        border: 2px solid red;
+        margin-bottom: 20px;
+      }
+      .child,
+      .child1 {
+        width: 100px;
+        height: 100px;
+        border: 1px solid gold;
+        margin-bottom: 10px;
+        background: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Add New HTML Content</h2>
+    <ul>
+      <li>append() - Inserts content at the end of the selected elements</li>
+      <li>
+        prepend() - Inserts content at the beginning of the selected elements
+      </li>
+      <li>after() - Inserts content after the selected elements</li>
+      <li>before() - Inserts content before the selected elements</li>
+    </ul>
+    <h3>Difference append and after -</h3>
+    <div class="parent">
+      <div class="child">First child</div>
+      <div class="child">second child</div>
+    </div>
+    <button id="AppendBtn">AppendBtn</button>
+    <button id="AfterBtn">AfterBtn</button>
+    <!--  -->
+
+    <h2>differ prepend and before -</h2>
+    <div class="parent1">
+      <div class="child1">First child</div>
+      <div class="child1">second child</div>
+    </div>
+    <button id="PrependBtn">PrependBtn</button>
+    <button id="beforeBtn">beforeBtn</button>
+
+    <script>
+      $(document).ready(function () {
+        // append
+        $("#AppendBtn").click(function () {
+          $(".parent").append("<div class='child'>Thrid child</div>");
+        });
+
+        //after
+        $("#AfterBtn").click(function () {
+          $(".parent").after("<div class='child'>Thrid child</div>");
+        });
+
+        //prepend
+        $("#PrependBtn").click(function () {
+          $(".parent1").prepend("<div class='child1'>thrid child</div>");
+        });
+
+        // before
+        $("#beforeBtn").click(function () {
+          $(".parent1").before("<div class='child1'>thrid child</div>");
+        });
+      });
+    </script>
+  </body>
+</html>

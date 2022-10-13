@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descendants</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+      .descendants, .descendants * {
+        display: block;
+        border: 2px solid red;
+        margin: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>children Method -</h3>
+    <h3>children() method returns all direct children.</h3>
+    <div class="descendants">(current element)
+      <p>
+        p (child)
+        <span> span (grandchild) </span>
+      </p>
+      <p  >
+        p (child)
+        <span> span (grandchild) </span>
+      </p>
+    </div>
+    <button id="BtnChildren">BtnChildren</button>
+    <button id="BtnFind">BtnFind</button>
+    <script>
+        $(document).ready(function(){
+// children 
+            $("#BtnChildren").click(function(){
+                $(".descendants").children().css({ border: "3px solid yellow" });
+            });
+// find 
+$("#BtnFind").click(function(){
+    $(".descendants").find("span").css({ border: "3px solid green" });
+})
+        });
+    </script>
+  </body>
+</html>

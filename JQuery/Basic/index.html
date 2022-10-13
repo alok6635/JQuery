@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQ content</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <h2>jQuery is a reusable js library.jQuery- library
+      js - language</h2>
+    <h3>
+        JQuery is the sss
+        first thing is the - start with a $
+        second thing is the - select  the element(class,id).
+        thrid thing is the - shoot at the action.
+    ex- $("#demo").innerhtml("alok kumar")
+    </h3>
+    <h3> CDN(content delivery network) - reduce the server request.</h3>
+    <h3>json - java script object notation.
+        json is a simple data exchange format.
+    </h3>
+
+
+
+    <h1>JQuery effects</h1>
+
+    <!-- hide and show -->
+    <div id="hideAndShow">
+      <h2> ## hide() and show()</h2>
+      <p>If you click on the "Hide" button</p>
+      <p>If you click on the "Hide" button, I will disappear all times.</p>
+      <p>If you click on the "Hide" button, I will disappear.</p>
+      <button id="hide">hide</button>
+      <button id="show">show</button>
+    </div>
+
+    <!-- jQuery toggle() -->
+    <h2> ## jQuery toggle()</h2>
+
+    <div id="toggle">
+      <p>If you click on the "Hide" button</p>
+      <p>If you click on the "Hide" button, I will disappear all times.</p>
+      <p>new para start here.</p>
+      <p>I will disappear.</p>
+      <button id="toggleBtn">toggle button</button>
+    </div>
+
+    <!-- Fading Methods  -->
+    <h2>## Fading Methods</h2>
+    <ul>
+      <li>fadeIn()</li>
+      <li>fadeOut()</li>
+      <li>fadeToggle()</li>
+      <li>fadeTo()</li>
+    </ul>
+
+    <!-- FadingIn  -->
+    <h2 class="smallH2"> FadingIn</h2>
+    <h3>fade an element in and out of visibility.</h3>
+    <div id="fadeIn">
+      <button id="fadeInBtn">fadeIn</button>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- FadingOut  -->
+    <h2 class="smallH2"> FadingOut</h2>
+    <h3>fadeOut() method is used to fade out a visible element.</h3>
+    <div id="fadeOut">
+      <button id="fadeOutBtn">fadeOut</button>
+      <div id="out1"></div>
+      <div id="out2"></div>
+      <div id="out3"></div>
+    </div>
+
+    <!-- fadeToggle() Method  -->
+    <h2 class="smallH2"> fadeToggle() Method</h2>
+    <h3>fadeToggle() method toggles between the fadeIn() and fadeOut()</h3>
+    <div id="fadeToggle">
+      <button id="fadeToggleBtn">fadeToggle</button>
+      <div id="fadeToggle1"></div>
+      <div id="fadeToggle2"></div>
+      <div id="fadeToggle3"></div>
+    </div>
+
+    <!-- fadeToggle() Method  -->
+    <h2 class="smallH2"> fadeTo() Method</h2>
+    <h3>
+      fadeTo() method allows fading to a given opacity (value between 0 and 1)
+    </h3>
+    <div id="fadeTo">
+      <button id="fadeToBtn">fadeTo</button>
+      <div id="fadeTo1"></div>
+      <div id="fadeTo2"></div>
+      <div id="fadeTo3"></div>
+    </div>
+
+    <!-- jQuery Effects - Sliding -->
+    <h2>## jQuery Sliding Methods</h2>
+    <h3>jQuery slide methods slide elements up and down.</h3>
+    <ul>
+      <li>slideUp()</li>
+      <li>slideDown()</li>
+      <li>slideToggle()</li>
+    </ul>
+
+    <!-- slideUp -->
+    <h2 class="smallH2"> jQuery slideUp Methods</h2>
+    <div id="slideUp">
+      <button id="slideUpBtn">slideUpBtn</button>
+      <p>Click to slide up panel</p>
+      <p>Click to new slide up panel</p>
+    </div>
+
+    <!--slidedown  -->
+    <h2 class="smallH2">jQuery slidedown Methods</h2>
+    <div id="slidedown">
+      <button id="slidedownBtn">slidedownBtn</button>
+      <p>Click to slide up panel</p>
+      <p>Click to new slide up panel</p>
+    </div>
+    <!--  slideToggle() Method-->
+    <h2 class="smallH2"> slideToggle() Method</h2>
+    <h3>
+      slideToggle() method toggles between the slideDown() and slideUp()
+      methods.
+    </h3>
+    <div id="slidetoggle">
+    </h3>
+<p>Click to slide the first panel down or up</p>
+<p>Click to slide the second down or up</p>
+<p>Click to slide the thrid down or up</p>
+    </div>
+    <button id="slidetoggleBtn"> slidetoggle</button>
+
+<!--Animation  -->
+<h2>## animate() Method</h2>
+<h3>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</h3>
+<div class="animateCover">
+<div id="aniamtion"></div>
+<button id="animateBtn">animateBtn</button>
+</div>
+
+<!-- stop method -->
+<h2>## stop method</h2>
+<div id="stopCover">
+<button id="stop">Stop sliding</button>
+<div id="flip">Click to slide down panel</div>
+<div id="panel">Hello world!</div>
+</div>
+    <!-- jQuery Callback Functions -->
+    <h2> ## jQuery Callback Functions</h2>
+    <h3>stop() method is used to stop an animation or effect before it is finished.</h3>
+    <h3>
+      A callback function is executed after the current effect is finished
+    </h3>
+    <div id="callBack">
+      <button id="callBackBtn">click me</button>
+
+      <h4>this is a call back function</h4>
+      <p>This is a paragraph with little content.</p>
+      <p id="callbackPara1">
+        This is a paragraph with short any other content.
+      </p>
+      <p>This is a paragraph with little content. and show other content</p>
+    </div>
+
+    <!-- without Callback -->
+    <h2> ## without Callback Functions</h2>
+    <div id="withoutcallBack">
+      <button id="withoutcallBackBtn">click me</button>
+      <h4>this is a call back function</h4>
+      <p>This is a paragraph with little content.</p>
+      <p id="withoutcallBackpara">
+        This is a paragraph with short any other content.
+      </p>
+      <p>This is a paragraph with little content. and show other content</p>
+    </div>
+
+    <!-- Chaining -->
+    <h2> ## Chaining</h2>
+    <h3>
+      Chaining allows us to run multiple jQuery methods (on the same element)
+      within a single statement
+    </h3>
+    <div id="chaining">
+      <button id="chainBtn">click</button>
+      <p id="p1">jQuery is fun!!</p>
+      <p id="p2">the first element</p>
+      <p id="p3">the first element</p>
+      <p id="p4">the first element</p>
+      <p id="p5">the first element</p>
+      <p id="p6">the first element</p>
+      <p id="p7">the first element</p>
+      <p id="p8">the first element</p>
+    </div>
+
+
+
+
+
+
+    <h2>jQuery - Get Content and Attributes</h2>
+    <h3>Get & Set Content - text(), html(), and val()</h3>
+    <p>
+      Three simple jQuery methods for DOM manipulation- <br />
+      text() - Sets or returns the text content of selected elements<br />
+      html() - Sets or returns the content of selected elements (including HTML
+      markup)<br />
+      val() - Sets or returns the value of form fields
+    </p>
+
+    <!--html() text() metheod  -->
+    <h2>html() ,text() metheod</h2>
+   <div class="divcoveR">
+    <p class="FindText">This is some <b>bold</b> text in a paragraph </p>
+    <span class="btn" id="btn1">
+      <a href="#">
+      show text</span></a>
+    <span class="btn" id="btn2">
+      <a href="#">
+      show html</span></a>
+    </div>
+   <!--val() metheod  -->
+   <h2>val metheod</h2>
+<form action="">
+  <input type="text" name="" id="" value="Ninja">
+</form>
+<button id="ValBTN">ValBTN</button>
+<h4>ex-II</h4>
+<form action="" id="sform">
+  <label for="">name </label>
+  <input type="text" id="sname"><br><br>
+<label for="">class</label>
+<input type="text" id="sclass"><br><br>
+<label for="">country</label>
+<select name="" id="scountry">
+  <option value="india">india</option>
+  <option value="china">china</option>
+  <option value="russia">russia</option>
+</select>
+<br><br>
+<input type="submit">
+</form>
+
+  <!-- attribute metheod -->
+<h2>attribute metheod</h2>
+  <a href="https://www.w3schools.com" class="w3s">W3Schools.com</a>
+</p>
+<button id="attr">hrefValue</button>
+
+<!-- Set Content - text(), html(), and val() -->
+<h2> Set content - text(),html(),val() </h2>
+<div id="set">
+  <p id="test1">This is a paragraph.</p>
+  <p id="test2">This is another paragraph.</p>
+  <p>Input field: <input type="text" id="test3" value="Mickey Mouse"></p>
+  <button id="Setbtn1">Set Text</button>
+  <button id="Setbtn2">Set HTML</button>
+  <button id="Setbtn3">Set Value</button>  
+</div>
+
+<!--Set attr()  -->
+<h2>Set Attributes - attr()</h2>
+<p><a href="https://www.w3schools.com" id="W3sc">W3Schools.com</a></p>
+<button id="changeHref">changeHref</button>
+
+   
+    
+   
+
+   
+
+
+<!-- jQuery Dimension Methods -->
+<h2>jQuery Dimension Methods</h2>
+<ol>
+  <li>width()</li>
+  <li>
+    height()
+
+  </li>
+  <li>
+    innerWidth()
+
+  </li>
+  <li>
+    innerHeight()
+
+  </li>
+  <li>
+    outerWidth()
+
+  </li>
+  <li>
+    outerHeight()
+
+  </li>
+</ol>
+<!-- width & height Method -->
+<div class="widthAndHeighT">
+  <p>width of div: <em id="DIVwidth"></em></p>
+  <p>height of div: <em id="HeightDIV"></em></p>
+</div>
+<button id="widthAndHeighTBtn">widthAndHeighTBtn</button>
+
+<!-- Traversing - Siblings -->
+ 
+
+<!-- siblings() Method -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- js file -->
+<script src="assets/js/jquery-3.6.0.js"></script>
+    <script src="assets/js/first.js"></script>
+  </body>
+</html>
+
+

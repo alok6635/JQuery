@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closest , offset</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+    .mainouter{
+    background: palegoldenrod;
+    width: 460px;
+    padding: 10px;
+}
+.outer{
+    background: darkmagenta;
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    position: relative;
+}
+.inner{
+    background: yellow;
+    width: 330px;
+    height: 100px;
+    padding: 20px;
+}
+.flex{
+    display: flex;
+}
+.divcover div{
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    background: red;
+    margin: 0 20px;
+
+}
+</style>
+</head>
+<body>
+    <h2>closest() Method</h2>
+<h3> closest() method returns the first ancestor of the selected element.</h3>
+<h3> offsetParent() method returns the first positioned parent element.<br>
+    Note: An element can be positioned with jQuery, or with the CSS position property (relative, absolute, or fixed).</h3>
+<div class="mainouter">Main outer
+<ul class="outer"> Inner outer
+ <ul class="inner"> Inner
+   <div class="divcover flex" >
+     <div>A</div>
+     <div id="child-b">b</div>
+     <div id="child-c">C</div>
+     <div>D</div>
+   </div>
+ </ul>
+</ul>
+ </div>
+ <button id="closetBtn">closet</button>
+ <button id="offsetBtn">offset</button>
+ <script>
+
+$(document).ready(function(){
+//closest
+$("#closetBtn").click(function () {
+  $("#child-b").closest("div").css({ background: "green" });
+  $("#child-b").closest("ul").css({ background: "pink" });
+});
+// offsetParents
+$("#offsetBtn").click(function () {
+  $("#child-c").offsetParent().css({ background: "black" });
+});
+})
+
+ </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accordian</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h3 {
+    background: gray;
+    color: #fff;
+    padding: 10px;
+}
+p{
+    padding: 10px;
+    display: none;
+}
+.section.active p{
+display: block;
+}
+    </style>
+</head>
+<body>
+    <div class="section active">
+<h3>Section 1</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magnam tempora delectus, quia voluptas iste voluptatibus ratione aliquid provident autem reiciendis asperiores illum deleniti quis sit dignissimos inventore at quisquam.</p>
+</div>
+    <div class="section">
+<h3>Section 1</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magnam tempora delectus, quia voluptas iste voluptatibus ratione aliquid provident autem reiciendis asperiores illum deleniti quis sit dignissimos inventore at quisquam.</p>
+</div>
+    <div class="section">
+<h3>Section 1</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magnam tempora delectus, quia voluptas iste voluptatibus ratione aliquid provident autem reiciendis asperiores illum deleniti quis sit dignissimos inventore at quisquam.</p>
+</div>
+    <div class="section">
+<h3>Section 1</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magnam tempora delectus, quia voluptas iste voluptatibus ratione aliquid provident autem reiciendis asperiores illum deleniti quis sit dignissimos inventore at quisquam.</p>
+</div>
+    <div class="section">
+<h3>Section 1</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magnam tempora delectus, quia voluptas iste voluptatibus ratione aliquid provident autem reiciendis asperiores illum deleniti quis sit dignissimos inventore at quisquam.</p>
+</div>
+    <div class="section">
+<h3>Section 1</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magnam tempora delectus, quia voluptas iste voluptatibus ratione aliquid provident autem reiciendis asperiores illum deleniti quis sit dignissimos inventore at quisquam.</p>
+</div>
+ <script src="assets/js/jquery-3.6.0.min.js"></script>   
+ <script>
+     $(document).ready(function(){
+         $('h3').click(function(){
+             $('.section').removeClass('active');
+             $(this).parent().addClass('active');
+        });
+     });
+ </script>
+
+</body>
+</html>

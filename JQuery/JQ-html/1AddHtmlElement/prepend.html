@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - prepend content</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   
+</head>
+<body>
+ 
+
+<!-- prepend -->
+<h3>prepend-</h3>
+<div id="div2">
+    <p>newparaadddddd1</p>
+    <p>newparaadddddd2</p>
+    <p>newparaadddddd3</p>
+</div>
+<ol id="change2">
+<li>
+    first link
+</li>
+<li>
+    second link
+</li>
+<li>
+    thrid link
+</li>
+<li>
+    fourth link
+</li>
+<li>
+    fiveth link
+</li>
+
+</ol>
+<button id="btn5">click me</button>
+<button id="btn6">click me</button>
+
+<!-- before -->
+<h3>before--</h3>
+<div id="div3">
+    <p>newparaadddddd1</p>
+    <p>newparaadddddd2</p>
+    <p>newparaadddddd3</p>
+</div>
+<ol id="change3">
+<li>
+    first link
+</li>
+<li>
+    second link
+</li>
+<li>
+    thrid link
+</li>
+<li>
+    fourth link
+</li>
+<li>
+    fiveth link
+</li>
+
+</ol>
+<button id="btn7">click me</button>
+<button id="btn8">click me</button>
+
+
+
+    <script>
+        $(document).ready(function(){
+// para prepend  
+$("#btn5").click(function(){
+        $("#div2 p").prepend("<b>alok kumar</b>");
+            });
+// li prepend
+        $("#btn6").click(function(){
+            $("#change2").prepend("<b><li>contact me</li></b>");
+        });
+// para before
+$("#btn7").click(function(){
+    $("#div3 p").before("<b>mouse is a pet animal </b>");
+});
+
+// li before
+$("#btn8").click(function(){
+    $("#change3 li").before("<b>sahil singh </b>");
+});
+
+});    
+            </script>
+</body>
+</html>

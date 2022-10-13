@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQuery - remove html content</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <style>
+    #remove{
+      width: 200px;
+      height: 100px;
+      background: red;
+    }
+   </style>
+  </head>
+  <body>
+    <h2>Remove Elements/Content</h2>
+    <ul>
+      <li>
+        remove() - Removes the selected element (and its child elements)
+      </li>
+      <li>empty() - Removes the child elements from the selected element
+
+      </li>
+    </ul>
+    <h3>remove() Method -</h3>
+    <div id="remove">
+      <p>remove the para</p>
+      <p>remove the new para</p>
+    </div>
+    <button id="removeBtn">remove me</button>
+    <h3>empty() Method -</h3>
+    <div>
+      <p>this is a first empty box</p>
+      <p >this is a second empty box</p>
+      <p>this is a thrid empty box</p>
+      <h4>new pararra</h4>
+      <p>this is a fourth empty box</p>
+      <span>this is a span data</span>
+    </div>
+    <button id="emptyBtn">empty me</button>
+
+    <script>
+      $(document).ready(function () {
+// remove
+        $("#removeBtn").click(function () {
+          $("#remove").remove();
+        });
+//empty
+        $("div:last-of-type").css({"background" : "blue","width": "200px","height": "230px"
+});
+$("#emptyBtn").click(function(){
+    $(this).parents().find("div:last-of-type").empty();
+
+});
+        })
+    </script>
+  </body>
+</html>

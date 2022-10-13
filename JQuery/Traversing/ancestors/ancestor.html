@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .great-grand-parent, .great-grand-parent *{
+            border: 2px solid red;
+            margin: 10px;
+        }
+                    </style>
+</head>
+<body>
+    <h3>  parent,parents,parentsUntil  Method -</h3>
+        <div class="great-grand-parent">
+            great-grand-parent
+            <div class="grand-parent">
+              grand-parent
+              <ul class="parent">
+                parent
+                <li class="child-one">Child One</li>
+                <li class="child-two">Child Two</li>
+              </ul>
+            </div>
+          </div>
+          <button id="parentBtn"> Parent</button>
+          <button id="parentBtn1"> Parents</button>
+          <button id="parentBtn2"> Parentsuntill</button>
+          
+         <script>
+            $(document).ready(function(){
+// parents
+                $("#parentBtn").click(function(){
+                $("li").parent().css({ border: "2px solid blue"});
+            });
+// parents
+$("#parentBtn1").click(function(){
+                $("li").parents().css({ border: "2px solid green"});
+            });
+           
+// parentsUntil()  
+$("#parentBtn2").click(function(){
+                $("li").parentsUntil(".great-grand-parent").css({ border: "2px solid yellow"});  
+            });
+        });
+         </script>
+
+
+</body>
+</html>

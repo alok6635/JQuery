@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filtering</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style>
+        #firstMethod div{
+            border: 2px solid gray;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>jQuery Traversing - Filtering</h2>
+    <h3>1. first() method returns the first element of the specified elements</h3>
+    <h3>2. last() method returns the last element of the specified elements</h3>
+    <h3>3. eq() method returns an element with a specific index number of the selected elements.index numbers start at 0, so the first element will have the index number 0 and not 1.</h3>
+    <h3>4. filter() method lets you specify a criteria. Elements that do not match the criteria are removed from the selection, and those that match will be returned.</h3>
+    <h3>5. not() method returns all elements that do not match the criteria</h3>
+<div id="firstMethod">
+<div>
+<p>this is a main div</p>
+<p>this is a other div</p>
+</div>
+<div>
+<p>this is a main div</p>
+<p>this is a other div</p>
+</div>
+<div>
+<p>this is a main div</p>
+<p class="new">this is a main div</p>
+<p>this is a other div</p>
+</div>
+<div>
+<p class="new">this is a main div</p>
+<p>this is a other div</p>
+</div>
+</div>
+<button id="firstBtn">firstMethod</button>
+<button id="LastBtnBtn">lastMethod</button>
+<button id="eqBtn">eqBtn</button>
+<button id="FillterBtn">FillterBtn</button>
+<button id="notBtn">notBtn</button>
+<script>
+    $(document).ready(function(){
+// first method- 
+        $("#firstBtn").click(function(){
+            $(this).parents().find("div div").first().css({ background: "blue" });
+        });
+ // last method- 
+ $("#LastBtnBtn").click(function(){
+            $(this).parents().find("div p").last().css({ background: "red" });
+        });
+// eq method-
+$("#eqBtn").click(function(){
+            $(this).parents().find("p").eq(4).css({ color: "orange" });
+        });
+// filter method-
+$("#FillterBtn").click(function () {
+  $(this).parents().find("p").filter(".new").css({ color: "yellow" });
+});
+// not method-
+$("#notBtn").click(function(){
+    $(this).parents().find("p").not(".new").css("color", "pink");
+});
+    });
+</script>
+
+</body>
+</html>

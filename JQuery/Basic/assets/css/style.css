@@ -1,0 +1,299 @@
+/* global css */
+h3{
+    color: blue;
+}
+h2{
+    color: red;
+}
+.smallH2{
+    font-size: 16px;
+}
+/* toggle css */
+#fadeIn div{
+    width: 90px;
+    height: 90px;
+    border: 1px solid black;
+    }
+    #fadeIn div:nth-child(n+2){
+        background: black;
+    }
+    #fadeIn div:nth-child(n+3){
+        background: red;
+    }
+    #fadeIn div:nth-child(n+4){
+        background: pink;
+    }
+    #fadeIn div{
+        display: none;
+    }
+
+#fadeOut div{
+width: 90px;
+height: 90px;
+border: 1px solid red;
+background: indigo;
+    }
+ #fadeOut #out1{
+    background: wheat;
+ } 
+ #fadeOut #out2{
+    background: sandybrown;
+ }  
+ #fadeOut #out3{
+    background: lawngreen;
+ }
+#fadeToggle div{
+    width: 90px;
+    height: 90px;
+    border: 1px solid red;
+    background: indigo; 
+}
+#fadeToggle #fadeToggle1{
+background: salmon;
+}
+#fadeToggle #fadeToggle2{
+    background: lightgray;
+    }
+
+    #fadeTo div{
+    width: 90px;
+    height: 90px;
+    border: 1px solid black;
+    }
+   #fadeTo #fadeTo1{
+    background: black;
+   } 
+   #fadeTo #fadeTo2{
+    background: red;
+   } 
+   #fadeTo #fadeTo3{
+    background: black;
+   } 
+
+   #slidedown p{
+    display: none;
+   }
+   #slidetoggle {
+    display: none;
+    background: seashell;
+   }
+   #aniamtion{
+    background: rebeccapurple;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 25px;
+   }
+   .animateCover{
+    position: relative;
+    margin-bottom: 110px;
+   }
+   #panel, #flip {
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #555;
+    color: white;
+    border: solid 1px #666;
+    border-radius: 3px;
+  }
+  #panel {
+    padding: 50px;
+    display: none;
+  }
+  
+  h2{
+    color: red;
+}
+h3{
+    color: blue;
+}
+h4{
+    color: #7cfc00;
+    font-size: 22px;
+
+}
+/* style css */
+#remove{
+    width: 150px;
+    height: 90px;
+    background-color: aqua;
+}
+.changecolor{
+    color: blueviolet;
+}
+.divcolor{
+    font-size: 30px;
+    color: aqua;
+}
+.remove1{
+    color: gold;
+}
+.remove2{
+    color: bisque;
+}
+.remove3{
+    color: #7cfc00;
+}
+.togglecolor{
+    background: silver;
+    color: brown;
+    width: 200px;
+    height: 160px;
+}
+.btn{
+    background: red;
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  a{
+    text-decoration: none;
+  }
+  .btn a{
+    color: #fff;
+  }
+
+#box{
+background: rebeccapurple;
+padding: 10px;
+border: 2px solid gold;
+width: 400px;
+}
+.parent,.parent1{
+    width: 250px;
+    height: 450px;
+    border: 2px solid red;
+    margin-bottom: 20px;
+}
+.child,.child1{
+    width: 100px;
+    height: 100px;
+    border: 1px solid gold;
+    margin-bottom: 10px;
+    background: gray;
+
+
+}
+
+/* global css */
+body{
+    margin-left: 10px;
+    margin: 10px;
+}
+h2{
+    color: red;
+    margin: 15px 0;
+    font-size: 22px;
+}
+.smallH2{
+    font-size: 16px;
+}
+h3{
+    color: blue;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.great-grand-parent,.great-grand-parent *{
+    border: 2px solid yellow;
+    padding: 10px;
+    margin: 5px;
+}
+.grand-parent{
+    width: 500px;
+}
+.mainouter{
+    background: palegoldenrod;
+    width: 460px;
+    padding: 10px;
+}
+.outer{
+    background: darkmagenta;
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    position: relative;
+}
+.inner{
+    background: yellow;
+    width: 330px;
+    height: 100px;
+    padding: 20px;
+}
+.flex{
+    display: flex;
+}
+.divcover div{
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    background: red;
+    margin: 0 20px;
+
+}
+.descendants *{
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+}
+#descendants *{
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+}
+.descendants{
+    width: 500px;
+}
+#descendants{
+    width: 500px;
+}
+
+.next *{
+    display: block;
+    border: 2px solid goldenrod;
+    color: green;
+    padding: 5px;
+    margin: 15px;
+}
+.nextAll *{
+    display: block;
+    border: 2px solid goldenrod;
+    color: green;
+    padding: 5px;
+    margin: 15px;
+}
+.nextuntill *{
+    display: block;
+    border: 2px solid red;
+    color: black;
+    padding: 5px;
+    margin: 15px; 
+}
+.prev *{
+    display: block;
+    border: 2px solid yellow;
+    color: black;
+    padding: 5px;
+    margin: 15px; 
+
+}
+
+#lastMethod div{
+    border: 3px solid yellowgreen;
+    margin-bottom: 5px;  
+}
+.cssmethod{
+    background: #7cfc00;
+}
+.cssmethod1{
+    background: salmon;
+}
+.widthAndHeighT{
+    width: 100px;
+    height: 100px;
+    background: hotpink;
+}

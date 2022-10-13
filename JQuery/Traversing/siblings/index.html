@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>siblings</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+ .siblindDiv *{
+    display: block;
+    border: 2px solid red;
+    padding: 5px;
+    margin: 15px;
+}
+    </style>
+
+</head>
+<body>
+    <div class="siblindDiv">
+        <div>
+         <p>para </p>
+         <span>this is a span1 </span>
+         <h6>para h6</h6>
+         <span>this is a span2 </span>
+         <h5>para h5</h5>
+         <h4>para h4</h4>
+        </div>
+        </div>
+        <button id="siblingBtn">siblingBtn</button>
+        <button id="nextBtn">nextBtn</button>
+        <button id="nextAllBtn">nextAllBtn</button>
+        <button id="nextUntill">nextUntill</button>
+        <h3>prev(), prevAll()  prevUntil() methods work  same next() methods</h3>
+        <script>
+            $(document).ready(function(){
+                $("#siblingBtn").click(function () { 
+                    $(this).parents().find(".siblindDiv").find("h6").siblings().css({ border: "3px solid black"});
+            });
+//  next method
+$("#nextBtn").click(function () {
+  $(this).parents().find("span").next().css({ border: "2px solid yellow" });
+});
+// next all
+$("#nextAllBtn").click(function(){
+    $(this).parents().find("span").nextAll().css({border: "2px solid blue"});
+});
+// nextUntill
+$("#nextUntill").click(function(){
+$(this).parents().find("span").nextUntil("h4").css({border: "2px solid green"});
+            });
+            });
+        </script>
+</body>
+</html>
